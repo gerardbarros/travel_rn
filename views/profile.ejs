@@ -12,19 +12,23 @@
             <form action="/post/createPost" enctype="multipart/form-data" method="POST">
               <div class="mb-3">
                   <label for="title" class="form-label">Hospital</label>
-                  <input type="text" class="form-control" id="hospital" name="hospital">
+                  <input type="text" class="form-control" id="hospital" name="hospital" placeholder="Name of facility">
               </div>
               <div class="mb-3">
                   <label for="title" class="form-label">Location</label>
-                  <input type="text" class="form-control" id="location" name="location">
+                  <input type="text" class="form-control" id="location" name="location" placeholder="City / State, Province, Country">
               </div>
               <div class="mb-3">
                   <label for="title" class="form-label">EMR Used</label>
-                  <input type="text" class="form-control" id="emr-used" name="emr-used">
+                  <input type="text" class="form-control" id="emr-used" name="emr-used" placeholder="EMR used by facility">
               </div>
               <div class="mb-3">
-                <label for="caption" class="form-label">Caption</label>
-                <textarea class="form-control" id="caption" name="caption"></textarea>
+                  <label for="title" class="form-label">Physican Coverage</label>
+                  <input type="text" class="form-control" id="physician-coverage" name="physician-coverage" placeholder="Onsite / paging? Dayshift / nightshift availability?">
+              </div>
+              <div class="mb-3">
+                <label for="caption" class="form-label">Notes about assignment:</label>
+                <textarea class="form-control" id="assignment-notes" name="assignment-notes" placeholder="Any additional notes regarding assignment."></textarea>
               </div>
               <div class="mb-3">
                 <label for="imgUpload" class="form-label">Image</label>
