@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const PostSchema = new mongoose.Schema({
-  title: {
+  hospital: {
     type: String,
     required: true,
   },
@@ -25,7 +25,7 @@ const PostSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
-  caption: {
+  assignmentNotes: {
     type: String,
     required: true,
   },
