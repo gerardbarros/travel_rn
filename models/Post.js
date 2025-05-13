@@ -5,6 +5,18 @@ const PostSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  location: {
+    type: String,
+    required: true,
+  },
+  emrUsed: {
+    type: String,
+    required: true,
+  },
+  physicianCoverage: {
+    type: String,
+    required: true,
+  },
   image: {
     type: String,
     require: true,
