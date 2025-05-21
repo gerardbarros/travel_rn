@@ -9,6 +9,10 @@ const PostSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  agencyUsed: {
+    type: String,
+    required: true,
+  },
   emrUsed: {
     type: String,
     required: true,
