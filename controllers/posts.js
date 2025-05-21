@@ -34,6 +34,7 @@ module.exports = {
       await Post.create({
         hospital: req.body.hospital,
         location: req.body.location,
+        agencyUsed: req.body.agencyUsed,
         emrUsed: req.body.emrUsed,
         physicianCoverage: req.body.physicianCoverage,
         image: result.secure_url,
