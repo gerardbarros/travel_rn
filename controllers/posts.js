@@ -31,9 +31,16 @@ module.exports = {
       // Upload image to cloudinary
       const result = await cloudinary.uploader.upload(req.file.path);
 
+      // Get goecode from mapbox
+      const geoData = await geoCoder.forwardGeocode({
+        query: req.body.location,
+        limit: 1
+      }).send()
+
       await Post.create({
         hospital: req.body.hospital,
         location: req.body.location,
+        geometry: geoData.body.features[0].geometry,
         agencyUsed: req.body.agencyUsed,
         emrUsed: req.body.emrUsed,
         physicianCoverage: req.body.physicianCoverage,
