@@ -31,7 +31,7 @@ module.exports = {
       // Upload image to cloudinary
       const result = await cloudinary.uploader.upload(req.file.path);
 
-      // Get goecode from mapbox
+      // Get geocode from mapbox
       const geoData = await geoCoder.forwardGeocode({
         query: req.body.location,
         limit: 1
