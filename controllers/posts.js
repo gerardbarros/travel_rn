@@ -54,6 +54,7 @@ module.exports = {
         user: req.user.id,
       });
       console.log("Post has been added!");
+      console.log(geoData.body.features[0].geometry);
       res.redirect("/profile");
     } catch (err) {
       console.log(err);
