@@ -1,34 +1,25 @@
 <%- include('partials/header') -%>
   <div class="container">
-    <div class="row justify-content-center mt-5">
+    <div class="row flex-row mt-5">
       <h1>Recent Travel Assignments</h1>
+      
 <!-- START CAROUSEL -->      
     <div class="card" style="width: 18rem;">
       <% for(var i=0; i<posts.length; i++) {%>
         <!-- make the list item a card -->
+        <!-- make items into singular cards -->
 
-
-          <!-- <li class= "card-body" "col-6 justify-content-between mt-5"> -->
-            
-
-              <!-- <h2><%= posts[i].location%></h2> -->
-              <img class="img-fluid" src="<%= posts[i].image%>">
-            
-          <!-- </li> -->
-
-
-        
-      <img class="card-img-top" src="..." alt="Card image cap">
+      <img class="card-img-top img-fluid" src="<%= posts[i].image%>" alt="location">
       <!-- <div class="card-body"> -->
         <a href="/post/<%= posts[i]._id%>">
           <h5 class="card-title"><%= posts[i].location%></h5>
         </a>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
 
         <% } %>
       </div>
     </div>
+    <!--  -->
 <!-- END CAROUSEL -->
 
       
